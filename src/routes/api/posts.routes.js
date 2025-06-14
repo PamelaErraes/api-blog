@@ -7,6 +7,6 @@ router.get('/', getAll);
 router.get('/autor/:id', getPostsByAutor);
 router.post('/', create);
 
-// Define your routes here
+
 
 module.exports = router;
