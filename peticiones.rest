@@ -1,0 +1,33 @@
+@host = http://localhost:3000
+
+//Obtener todos los autores
+
+GET {{host}}/api/autores
+###
+POST {{host}}/api/autores
+Content-Type: application/json
+
+{
+    "nombre": "Ana Roldan",
+    "email": "anaroldan@email.com",
+    "imagen": "ana.jpg"
+}
+
+###
+//Obtener todos los POSTS
+
+GET {{host}}/api/posts
+
+###
+GET {{host}}/api/posts/autor/2
+###
+POST {{host}}/api/posts
+Content-Type: application/json
+
+{  
+    "titulo": "¿Qué es Angular y para qué se usa?",
+    "descripcion": "Descubre cómo Angular facilita la creación de aplicaciones web SPA modernas con componentes y servicios.",
+    "fecha_creacion": "2025-06-11",
+    "categoria": "Frontend",
+    "autor_id": 2
+}   
