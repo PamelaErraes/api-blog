@@ -7,7 +7,7 @@ const selecAll = async () => {
 
 const insert = async ({ nombre, email, imagen }) => {
     const [result] = await db.query('INSERT INTO autores (nombre, email, imagen) VALUES (?, ?, ?)', [nombre, email, imagen]);
-    return result;;
+    return result;
 };
 
 module.exports = {
